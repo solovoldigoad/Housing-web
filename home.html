@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyHome</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Log In box  -->
+    <!-- <div class="upperBox"> -->
+        <div class="Wrapper">
+            <span class="icon-close"><ion-icon name="close"></ion-icon></span>
+        <div class="form-box login">
+            <h2>Login</h2>
+                <form action="#">
+                <div class="input-box">
+                    <span class="logIcon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" required >
+                    <label >Email</label>
+                </div>
+                <div class="input-box">
+                    <span class="logIcon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" required >
+                    <label >password</label>
+                </div>
+                <div class="remember-forgot">
+                <label ><input type="checkbox">remember me </label><a href="#">Forgot Password?</a>
+            </div>
+                <button type="submit" class="btn">Login</button>
+                <div class="login-register">
+                <p> Don't have an account ? <a href="#" class="register-link">Register</a></p>
+                </div>
+            </form>
+            </div>
+            <!-- Registation -->
+            <div class="form-box reginstation">
+                <h2>Registation</h2>
+                    <form action="#">
+                        <div class="input-box">
+                            <span class="logIcon"><ion-icon name="person"></ion-icon></span>
+                            <input type="text" required >
+                            <label >Username</label>
+                        </div>
+                        
+                        <div class="input-box">
+                            <span class="logIcon"><ion-icon name="mail"></ion-icon></span>
+                            <input type="email" required >
+                            <label >Email</label>
+                        </div>
+                    <div class="input-box">
+                        <span class="logIcon"><ion-icon name="lock-closed"></ion-icon></span>
+                        <input type="password" required >
+                        <label >password</label>
+                    </div>
+                    <div class="remember-forgot">
+                    <label ><input type="checkbox"> I agree to the terms & conditions </label>
+                </div>
+                    <button type="submit" class="btn">Register</button>
+                    <div class="login-register">
+                    <p> Already have an account? <a href="#" class="logIn-link">Login</a></p>
+                    </div>
+                </form>
+                </div>
+            </div>
+        <!-- </div> -->
+        
+    <!-- Log In box end  -->
+    <div class="homePage">
+        <div class="taskBar">
+            <div id="logo"></div>
+            <div class="hader2">
+            <div>List a property </div>
+            <div ><button id="LogIn">Log In</button></div>
+            <button id="start">Get started</button>
+        </div>
+    </div>
+    <div class="coverLine"> <h1> Find your cozy corner </h1></div>
+    <div class="searchTab"><input type="text" id="searchBar" placeholder="where are you looking for your next home?">
+        <div class="searchBtn"> <button id="search">Search <i class="fa-solid fa-arrow-right"></i></button></div>
+    </div>
+    <div class="option"> Types:
+        <div class="one box">Studio</div>
+        <div class="box">Apartment</div>
+        <div class="box">Single Family Home</div>
+        <div class="box">Condos</div>
+        <div class="box">Townhomes</div>
+        <div class="box">Houses</div>
+
+    </div>
+</div>
+<div class="bottomPage">
+    <div class="property">
+    <div id="heading">Properties for you</div>
+    <div id="para">This is your personalized list based on your need and search history </div>
+</div >
+<div class="propertyImg">
+<div class="room" id="one" > <button id="changePrevBtn"><i class="fa-solid fa-angle-left"></i></button>  <button id="changeBtn"><i class="fa-solid fa-chevron-right"></i></button><img id="House1"  src="https://images.unsplash.com/photo-1512917774080-9991f1c4c750?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="room"> 600 MP Nagar , Bhopal <div class="info"> $3,000/month 2<i class="fa-solid fa-bed"></i> 1 <i class="fa-solid fa-bath"></i> </div></div>
+<div class="room" id="tow"> <button id="changePrevBtn2"><i class="fa-solid fa-angle-left"></i></button>  <button id="changeBtn2"><i class="fa-solid fa-chevron-right"></i></button><img  id="House2" src="https://images.unsplash.com/photo-1613977257592-4871e5fcd7c4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="hall"> 120 riverside Danish Nagar , Bhopal <div class="info">$4,200/month 2<i class="fa-solid fa-bed"></i> 1 <i class="fa-solid fa-bath"></i></div></div>
+<div class="room" id="three"><button id="changePrevBtn3"><i class="fa-solid fa-angle-left"></i></button> <button id="changeBtn3"><i class="fa-solid fa-chevron-right"></i></button><img id="House3" src="https://plus.unsplash.com/premium_photo-1661954372617-15780178eb2e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjl8fGx1eHVyeSUyMGhvdXNlfGVufDB8fDB8fHww" alt="kitchan"> 71 Kunjan Nagar, Bhopla <div class="info"> $3,800/month 3<i class="fa-solid fa-bed"></i> 2 <i class="fa-solid fa-bath"></i></div></div>
+<div class="room" id="four"> <button id="changePrevBtn4"><i class="fa-solid fa-angle-left"></i></button> <button id="changeBtn4"><i class="fa-solid fa-chevron-right"></i></button><img id="House4" src="https://images.unsplash.com/photo-1531971589569-0d9370cbe1e5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGx1eHVyeSUyMGhvdXNlfGVufDB8fDB8fHww" alt="pool">525 W Area Coloney , Bopal <div class="info"> $3,650/month 2<i class="fa-solid fa-bed"></i> 1 <i class="fa-solid fa-bath"></i></div> </div>
+</div>
+</div>
+<div id="endBody">Back to top</div>
+<div class="fotter">
+    <div class="fotterContant"> <div id="heading">ABOUT US</div>
+        <p>Welcome to Houser, your go-to destination for finding the perfect home. At Houser, we're dedicated to simplifying your home search with a user-friendly platform offering diverse housing options.
+        Founded in [Year], our mission is to connect you with your dream living space. Explore our listings, and let Houser be your trusted guide in your journey to a new home.
+    </p></div>
+    <div class="fotterContant"><div id="heading">ABOUT US</div>
+    <p>3755 Commercial St SE Salem . Coner with Sunny Boulevard. 37744</p>
+    <p> Commercial OR 97430</p>
+    <p> Phone:   (+91)9977700612</p>
+        <p> Fax:     (+91)9977700612</p>
+        <p> Email:   kushchauhn2004@gmail.com</p>
+        <p> Website: http://127.0.0.1:5500/home.html</p>
+    </ul>
+    <div id="icon"><i  class="fa-brands fa-facebook"></i> <i class="fa-brands fa-twitter"></i> <i class="fa-brands fa-linkedin"></i> <i class="fa-brands fa-pinterest"></i><i class="fa-brands fa-instagram"></i></div>
+</div>
+    <div class="fotterContant"><div id="heading">RECENT ARTICLES</div>
+            <p>> Why Live in bhopal</p>
+            <p>> Bhopal Real Estate</p>
+            <p>> Buying a Home</p>
+            <p>> Selling Your Home</p>
+            <p>> Sidebar on the Left</p>
+            <p>> Sidebar on the right</p>
+            <p>> Full Width Post</p>
+    </div>
+    <div class="fotterContant"><div id="heading"> LATEST LISTINGS</div>
+    <div id="Latestcontant">
+    <div class="smallbox"><div class="latestImg"> <img src="https://images.unsplash.com/photo-1628744876497-eb30460be9f6?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="sale one"></div> <div class="aboutImg"><p> 2 Bedroom Apartment</p>
+<p style="color: rgb(19, 220, 19);">$ 150/month</p></div>
+</div>
+    <div class="smallbox"><div class="latestImg"> <img src="https://images.unsplash.com/photo-1628744448840-55bdb2497bd4?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="sale two"></div> <div class="aboutImg"><p> Beautiful Villa for Sale </p>
+    <p style="color: rgb(19, 220, 19);">$ 2,500</p></div>
+    </div>
+    <div class="smallbox"><div class="latestImg"> <img src="https://images.unsplash.com/photo-1593696140826-c58b021acf8b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="sale three"></div> <div class="aboutImg"> <p> New Luxury flats in Irvine</p>
+    <p style="color: rgb(19, 220, 19);">$ 100/sq.ft</p></div>
+</div>
+</div>
+</div>
+<script src="home.js"> </script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html> 
